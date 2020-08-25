@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rimraf .cache/ dist/",
+    "start": "parcel src/index.html",
+    "dev": "nodemon server.js",
+    "prebuild": "rimraf .cache/ dist/",
+    "build": "parcel build src/index.html",
+    "postbuild": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "parcel": "^1.12.4",
+    "socket.io": "^2.3.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "socket.io-client": "^2.3.0"
+  }
+}
